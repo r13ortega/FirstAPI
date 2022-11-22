@@ -57,9 +57,10 @@ public class APIController {
         return str;
     }
     @GetMapping( "/test/")
-    public int countByRefreshing(){
+    public String countByRefreshing(){
         num++;
-        return num;
+        String str = "You have refreshed " + num + " times.";
+        return str;
     }
 
 }

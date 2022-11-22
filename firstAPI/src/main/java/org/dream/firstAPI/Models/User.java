@@ -10,11 +10,10 @@ public class User {
     private String firstName;
     @Column
     private String lastName;
-    @Column
-    private int age;
-    @Column
-    private String occupation;
-
+//    @Column
+//    private int age;
+//    @Column
+//    private String occupation;
     public long getId() {
         return id;
     }
@@ -39,19 +38,19 @@ public class User {
         this.lastName = lastName;
     }
 
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public String getOccupation() {
-        return occupation;
-    }
-
-    public void setOccupation(String occupation) {
-        this.occupation = occupation;
-    }
+//    public int getAge() {
+//        return age;
+//    }
+//
+//    public void setAge(int age) {
+//        this.age = age;
+//    }
+//
+//    public String getOccupation() {
+//        return occupation;
+//    }
+//
+//    public void setOccupation(String occupation) {
+//        this.occupation = occupation;
+//    }
 }

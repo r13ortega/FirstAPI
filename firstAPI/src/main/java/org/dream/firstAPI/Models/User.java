@@ -1,7 +1,6 @@
 package org.dream.firstAPI.Models;
 import javax.persistence.*;
 
-@Table
 @Entity
 public class User {
     @Id

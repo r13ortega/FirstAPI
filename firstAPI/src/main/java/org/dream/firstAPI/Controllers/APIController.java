@@ -23,7 +23,7 @@ public class APIController {
     public List<User> getUser(){
         return userRepo.findAll();
     }
-    @PostMapping(value = "save")
+    @PostMapping(value = "/save")
     public String saveUser(@RequestBody User user){
         userRepo.save(user);
         return "Saved...";

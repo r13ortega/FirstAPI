@@ -6,9 +6,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Scanner;
 
 @RestController
 public class APIController {
+    int num = 0;
+
 
     @Autowired
     private UserRepo userRepo;
@@ -47,7 +50,16 @@ public class APIController {
 
     @GetMapping( "/hello/")
     public static String getPage(){
-        return "Hello from our API.....nerd";
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Why do you want to enter?");
+        String str = scanner.nextLine();
+        System.out.println(str);
+        return str;
+    }
+    @GetMapping( "/test/")
+    public int countByRefreshing(){
+        num++;
+        return num;
     }
 
 }
